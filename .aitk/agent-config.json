@@ -1,0 +1,34 @@
+{
+  "name": "kibo-fulfillment-adapter",
+  "description": "Kibo Commerce Fulfillment Adapter for testing",
+  "type": "local",
+  "path": "./dist/index.js",
+  "config": {
+    "tenantId": "26507",
+    "siteId": "41315",
+    "clientId": "test-app.app.mozu.com",
+    "sharedSecret": "test-secret"
+  },
+  "tools": [
+    {
+      "name": "connect",
+      "description": "Connect to Kibo Commerce API"
+    },
+    {
+      "name": "healthCheck",
+      "description": "Check health of Kibo API connection"
+    },
+    {
+      "name": "getOrders",
+      "description": "Get orders from Kibo Commerce"
+    },
+    {
+      "name": "getProducts",
+      "description": "Get products from Kibo Commerce"
+    },
+    {
+      "name": "getInventory",
+      "description": "Get inventory levels"
+    }
+  ]
+}

@@ -207,6 +207,30 @@ The inspector opens a web UI where you can:
 - See real-time request/response data
 - Debug connection issues
 
+### HTTP Server for Testing
+
+To test with AI Toolkit Agent Inspector, wrap your adapter in an HTTP server:
+
+1. **Create `src/server.ts`** - see [server.ts example](https://gist.github.com/example)
+2. **Add scripts to package.json**:
+   ```json
+   "server": "npm run build && node -r dotenv/config dist/server.js"
+   ```
+3. **Run the server**: `npm run server`
+4. **Test endpoints** with AI Toolkit or curl:
+   ```bash
+   curl http://localhost:8087/health
+   curl -X POST http://localhost:8087/orders -H "Content-Type: application/json" -d '{"pageSize":5}'
+   ```
+
+### VS Code Debugging
+
+Press **F5** or use **Run > Start Debugging** to:
+- Launch the HTTP server with debugger attached
+- Set breakpoints in your TypeScript code
+- Inspect variables and step through code
+- Test with AI Toolkit Agent Inspector on port 8087
+
 # Run tests with coverage
 npm run test:coverage
 
