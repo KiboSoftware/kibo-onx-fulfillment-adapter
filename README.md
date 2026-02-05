@@ -156,6 +156,57 @@ npm run test:integration
 
 **Note:** Integration tests will use test credentials by default and skip real API calls. Set environment variables to test against actual Kibo API.
 
+## Testing with MCP Inspector
+
+To test your adapter interactively with the MCP Inspector tool:
+
+### Prerequisites
+```bash
+# Install MCP SDK (if not already installed)
+npm install --save-dev @modelcontextprotocol/sdk
+
+# Install AI Toolkit extension in VS Code (optional but recommended)
+```
+
+### Using AI Toolkit
+
+AI Toolkit has built-in support for testing adapters:
+
+1. **Open AI Toolkit** in VS Code (sidebar icon)
+2. **Go to Agent Inspector** tab
+3. **Add your adapter** with these settings:
+   - **Type:** Local
+   - **Path:** `./dist/index.js` (relative to workspace)
+   - **Config:**
+     ```json
+     {
+       "tenantId": "your-tenant-id",
+       "siteId": "your-site-id",
+       "clientId": "your-client-id",
+       "sharedSecret": "your-shared-secret"
+     }
+     ```
+4. **Start the inspector** and test adapter methods interactively
+
+### Using Command Line Inspector
+
+```bash
+# Build your adapter first
+npm run build
+
+# Run with npx (uses .env file automatically)
+npx @modelcontextprotocol/inspector node -r dotenv/config dist/index.js
+
+# Or set env vars directly
+KIBO_TENANT_ID=xxx KIBO_SITE_ID=xxx npx @modelcontextprotocol/inspector node dist/index.js
+```
+
+The inspector opens a web UI where you can:
+- View available adapter methods
+- Test methods with custom parameters
+- See real-time request/response data
+- Debug connection issues
+
 # Run tests with coverage
 npm run test:coverage
 
