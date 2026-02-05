@@ -8,8 +8,11 @@
  * - KIBO_SITE_ID
  * - KIBO_CLIENT_ID
  * - KIBO_SHARED_SECRET
+ * 
+ * Or create a .env file with these variables.
  */
 
+import 'dotenv/config';
 import { KiboFulfillmentAdapter } from './dist/index.js';
 
 // Load credentials from environment variables or use test defaults
