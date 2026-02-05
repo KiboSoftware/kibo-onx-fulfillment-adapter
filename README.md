@@ -138,6 +138,24 @@ See [docs/API.md](docs/API.md) for complete API documentation.
 # Run unit tests
 npm test
 
+# Run integration tests (with test credentials)
+npm run test:integration
+
+# Run integration tests with real API credentials
+export KIBO_TENANT_ID=your-tenant-id
+export KIBO_SITE_ID=your-site-id
+export KIBO_CLIENT_ID=your-client-id
+export KIBO_SHARED_SECRET=your-shared-secret
+npm run test:integration
+
+# Or use .env file for local development
+cp .env.example .env
+# Edit .env with your credentials
+npm run test:integration
+```
+
+**Note:** Integration tests will use test credentials by default and skip real API calls. Set environment variables to test against actual Kibo API.
+
 # Run tests with coverage
 npm run test:coverage
 

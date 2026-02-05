@@ -40,6 +40,11 @@ jobs:
       - name: Run integration tests
         run: npm run test:integration
         continue-on-error: true
+        env:
+          KIBO_TENANT_ID: ${{ secrets.KIBO_TENANT_ID }}
+          KIBO_SITE_ID: ${{ secrets.KIBO_SITE_ID }}
+          KIBO_CLIENT_ID: ${{ secrets.KIBO_CLIENT_ID }}
+          KIBO_SHARED_SECRET: ${{ secrets.KIBO_SHARED_SECRET }}
 
       - name: Upload coverage to Codecov (optional)
         if: matrix.node-version == '20.x'
