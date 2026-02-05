@@ -1,5 +1,7 @@
 # Kibo Commerce Fulfillment Adapter
 
+[![CI](https://github.com/KiboSoftware/kibo-onx-fulfillment-adapter/actions/workflows/ci.yml/badge.svg)](https://github.com/KiboSoftware/kibo-onx-fulfillment-adapter/actions/workflows/ci.yml)
+
 A Commerce Operations Foundation (COF) adapter for Kibo Commerce, enabling seamless integration with the COF MCP Server for order fulfillment operations.
 
 ## Table of Contents

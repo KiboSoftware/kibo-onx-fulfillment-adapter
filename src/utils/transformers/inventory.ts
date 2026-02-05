@@ -5,7 +5,7 @@
  */
 
 import type { InventoryItem } from '@cof-org/mcp';
-import type { InventoryResponse } from '@kibocommerce/rest-sdk/clients/Inventory';
+import type { InventoryResponse } from '@kibocommerce/rest-sdk/clients/Inventory/index.js';
 
 /**
  * Maps a Kibo InventoryResponse to COF InventoryItem format.

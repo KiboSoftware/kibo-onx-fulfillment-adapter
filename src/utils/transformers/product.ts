@@ -5,7 +5,7 @@
  */
 
 import type { Product, ProductVariant } from '@cof-org/mcp';
-import type { CatalogAdminsProduct, ProductVariation } from '@kibocommerce/rest-sdk/clients/CatalogAdministration';
+import type { CatalogAdminsProduct, ProductVariation } from '@kibocommerce/rest-sdk/clients/CatalogAdministration/index.js';
 
 /**
  * Extracts product options from Kibo product options array.

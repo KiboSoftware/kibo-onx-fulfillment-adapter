@@ -6,14 +6,14 @@
  */
 
 import { Configuration } from '@kibocommerce/rest-sdk';
-import { OrderApi, ReturnApi } from '@kibocommerce/rest-sdk/clients/Commerce';
-import { ShipmentApi } from '@kibocommerce/rest-sdk/clients/Fulfillment';
-import { InventoryApi } from '@kibocommerce/rest-sdk/clients/Inventory';
+import { OrderApi, ReturnApi } from '@kibocommerce/rest-sdk/clients/Commerce/index.js';
+import { ShipmentApi } from '@kibocommerce/rest-sdk/clients/Fulfillment/index.js';
+import { InventoryApi } from '@kibocommerce/rest-sdk/clients/Inventory/index.js';
 import {
   ProductsApi,
   ProductVariationsApi,
-} from '@kibocommerce/rest-sdk/clients/CatalogAdministration';
-import { CustomerAccountApi } from '@kibocommerce/rest-sdk/clients/Customer';
+} from '@kibocommerce/rest-sdk/clients/CatalogAdministration/index.js';
+import { CustomerAccountApi } from '@kibocommerce/rest-sdk/clients/Customer/index.js';
 import type {
   IFulfillmentAdapter,
   AdapterConfig,

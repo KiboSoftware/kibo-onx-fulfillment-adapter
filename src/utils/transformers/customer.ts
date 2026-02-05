@@ -5,7 +5,7 @@
  */
 
 import type { Customer } from '@cof-org/mcp';
-import type { CustomerAccount, CustomerContact } from '@kibocommerce/rest-sdk/clients/Customer';
+import type { CustomerAccount, CustomerContact } from '@kibocommerce/rest-sdk/clients/Customer/index.js';
 
 /**
  * Maps Kibo CustomerContact addresses to COF Address format
