@@ -1,6 +1,6 @@
 {
   "name": "@kibocommerce/onx-fulfillment-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Commerce Operations Foundation adapter for Kibo Commerce",
   "type": "module",
   "main": "dist/index.js",
