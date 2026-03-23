@@ -235,6 +235,7 @@ Press **F5** or use **Run > Start Debugging** to:
 npm run test:coverage
 
 # Run TypeScript type checking
+```
 npm run typecheck
 ```
 
@@ -243,6 +244,7 @@ npm run typecheck
 ### Project Structure
 
 ```
+
 kibo-onx-fulfillment-adapter/
 ├── src/
 │   ├── adapter.ts           # Main adapter implementation
