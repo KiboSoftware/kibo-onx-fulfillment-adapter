@@ -27,13 +27,13 @@ A Commerce Operations Foundation (COF) adapter for Kibo Commerce, enabling seaml
 ## Installation
 
 ```bash
-npm install @kibocommerce/cof-fulfillment-adapter
+npm install @kibocommerce/onx-fulfillment-adapter
 ```
 
 ## Quick Start
 
 ```typescript
-import { KiboFulfillmentAdapter } from '@kibocommerce/cof-fulfillment-adapter';
+import { KiboFulfillmentAdapter } from '@kibocommerce/onx-fulfillment-adapter';
 
 const adapter = new KiboFulfillmentAdapter({
   tenantId: '26507',
@@ -92,7 +92,7 @@ const result = await adapter.fulfillOrder({
 
 ```bash
 ADAPTER_TYPE=npm
-ADAPTER_PACKAGE=@kibocommerce/cof-fulfillment-adapter
+ADAPTER_PACKAGE=@kibocommerce/onx-fulfillment-adapter
 ADAPTER_CONFIG={"tenantId":"26507","siteId":"41315","clientId":"your-app.app.mozu.com","sharedSecret":"secret"}
 ```
 
